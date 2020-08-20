@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Ftucheckpoint
+Bundle-SymbolicName: net.frontuari.ftucheckpoint;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Automatic-Module-Name: net.frontuari.ftucheckpoint
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Bundle-Vendor: Frontuari, C.A
+Bundle-ActivationPolicy: lazy
+Bundle-Activator: org.adempiere.plugin.utils.AdempiereActivator
+Require-Bundle: org.adempiere.base;bundle-version="7.1.0",
+ org.adempiere.plugin.utils;bundle-version="7.1.0",
+ org.adempiere.ui.zk;bundle-version="7.1.0",
+ org.adempiere.ui;bundle-version="7.1.0",
+ zk;bundle-version="8.6.0",
+ zul;bundle-version="8.6.0",
+ net.frontuari.recordweight
+Export-Package: net.frontuari.ftucheckpoint.factory,
+ net.frontuari.ftucheckpoint.process,
+ net.frontuari.model
+Service-Component: OSGI-INF/FTUProcessFactory.xml,
+ OSGI-INF/FTUModelFactory.xml
